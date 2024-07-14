@@ -1,0 +1,149 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    background: linear-gradient(135deg, #22486d 0%, #5b7a92 50%, #6f94b0 100%);
+    background-attachment: fixed;
+    color: #dbe4ec;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(219, 228, 236, 0.5);
+}
+
+form {
+    width: 60vw;
+    max-width: 550px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: rgba(192, 214, 228, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(34, 72, 109, 0.3);
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 2px solid rgba(219, 228, 236, 0.2);
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    color: #c0d6e4;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    background-color: rgba(34, 72, 109, 0.7);
+    border: 1px solid #6f94b0;
+    color: #dbe4ec;
+    border-radius: 5px;
+}
+
+select {
+    width: 101%;
+    padding: 6px;
+}
+
+.inline {
+    width: auto;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 2em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #6f94b0;
+    border: none;
+    color: #22486d;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #5b7a92;
+}
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+
+.terms-container {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: rgba(192, 214, 228, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(34, 72, 109, 0.3);
+}
+
+a {
+    color: #c0d6e4;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #dbe4ec;
+}
+
+.position-fieldset {
+    padding-top: 3rem;
+}
+
+.position-fieldset label:first-of-type {
+    margin-top: 1rem;
+}
+
+.terms-container {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.file-input {
+    width: 100%;
+    padding: 1px;
+    font-size: 14px;
+}
+
+.file-input::-webkit-file-upload-button {
+    visibility: hidden;
+    width: 0;
+}
+
+.file-input::before {
+    content: 'Choose File';
+    display: inline-block;
+    background-color: #6f94b0;
+    color: #22486d;
+    padding: 6px 10px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.file-input:hover::before {
+    background-color: #5b7a92;
+}
